@@ -8,18 +8,71 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 40px;
+            margin: 0;
             background: #121212;
             color: #ffffff;
+            scroll-behavior: smooth;
         }
-        h1 {
+        nav {
+            background: #1f1f1f;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
             color: #00bcd4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #00bcd4;
+            text-align: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: #1f1f1f;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to AceTheInterview</h1>
-    <p>Your journey to interview success starts here!</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to AceTheInterview</h1>
+        <p>Your journey to interview success starts here!</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>At AceTheInterview, we help job seekers build confidence and master their interviews. Get practical tips, personalized coaching, and expert insights to craft strong answers and leave a lasting impression. Whether it’s your first job or a career change, we’ll help you ace every step and land your dream role.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Personalized interview coaching</li>
+            <li>Resume and cover letter reviews</li>
+            <li>Mock interviews with feedback</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Ready to ace your next interview? Reach out to us at:</p>
+        <p>Email: contact@acetheinterview.com</p>
+    </section>
 </body>
 </html>
